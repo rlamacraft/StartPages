@@ -1,0 +1,89 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,200);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+#background,
+#stage,
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+#background {
+  z-index: 1000;
+  height: 100%;
+  background-color: #e3e5e5;
+}
+#background #icons {
+  top: 35%;
+  width: 100%;
+  height: 65%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  z-index: 1500;
+}
+#background #icons .icon-row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#background #icons .icon-row .icon {
+  opacity: 0.35;
+  margin: 0.3em;
+  transition: all .5s ease;
+  cursor: pointer;
+  font-size: 3.1em;
+}
+#background #icons .icon-row .icon:hover {
+  transition: all .2s ease;
+  opacity: 0.75;
+  transform: scale(1.1);
+  transition: none;
+}
+header.header {
+  z-index: 3000;
+  height: 75px;
+  background-color: #f5f5f5;
+  box-shadow: 0 3px 12px #ccc;
+}
+header.header .header-search {
+  border: none;
+  background: none;
+  margin: 15px;
+  font-size: 1.75em;
+  font-family: "Open Sans", "Roboto", sans-serif;
+  font-weight: 300;
+  color: #333333;
+}
+header.header .header-search:focus {
+  outline: none;
+}
+/****
+REPLACE WITH JSON
+****/
+.icon:nth-child(6) {
+  color: #9C27B0;
+}
+.icon:nth-child(5) {
+  color: #78C5D7;
+}
+.icon:nth-child(4) {
+  color: #79C268;
+}
+.icon:nth-child(3) {
+  color: #C5D747;
+}
+.icon:nth-child(2) {
+  color: #F48C33;
+}
+.icon:nth-child(1) {
+  color: #EF5350;
+}
